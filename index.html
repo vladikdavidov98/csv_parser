@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSV</title>
     <script type="text/javascript" src='./js/papaparse.min.js'></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body >
-    <input id="upload-csv" type="file" accept=".csv">
-    <button id="btn-upload-csv">Read CSV</button>
-    <table id="tbl-data"></table>
+    <div class="wrapper">
+        <div>
+            <div class="csv_block">
+                <input id="upload-csv" type="file" accept=".csv">
+            </div>
+            <div class="csv_block btn">
+                <button id="btn-upload-csv">Compose CSV</button>
+           </div>
+            
+        </div>
+       
+        <div id="error" class="red hide">
+            <h1>Invalid file format!</h1> 
+        </div>
+
+        <div id="no_file" class="red hide">
+            <h1>Please select file!</h1>
+        </div>
+    </div>
+    
+
     <script src="./js/index.js"></script>
+
 </body>
 </html>

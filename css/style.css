@@ -1,0 +1,22 @@
+body {
+    background-color: #0eb19b;
+  }
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    height: 100%;
+}
+.csv_block{
+    padding: 20px;
+}
+
+.red{
+    color: rgb(255, 0, 0);
+}
+
+.hide{
+    display: none;
+}
